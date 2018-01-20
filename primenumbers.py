@@ -4,7 +4,7 @@ import decorators
 
 
 @decorators.timeit
-def primes_sieve2(limit):
+def primes_sieve(limit):
     a = [True] * limit
     a[0] = a[1] = False
 
@@ -16,6 +16,6 @@ def primes_sieve2(limit):
     return a
 
 
-primes_sieve2(2000000)
+primes_sieve(2000000)
 
 
