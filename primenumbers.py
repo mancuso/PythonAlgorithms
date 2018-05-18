@@ -5,7 +5,7 @@ import decorators
 
 @decorators.timeit
 def primes_sieve(limit):
-    """ Return list of primes smaller than limit with indexes marked as true. O(sqrt(N))     """
+    """ Return list of primes smaller than limit with indexes marked as true. O(n(logn)(loglogn))     """
     a = [True] * limit
     a[0] = a[1] = False
 
